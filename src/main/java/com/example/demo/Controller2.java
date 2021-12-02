@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 public class Controller2 {
 
+	@GetMapping
+	public String Welcome() {
+		return "welcome";
+	}
+
 	@GetMapping("/test")
 	public String helloGet(@RequestParam String name) {
 		return name;

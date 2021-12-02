@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller2 {
 
-	@GetMapping("/")
+	@GetMapping("/test")
 	public String helloGet(@RequestParam String name) {
 		return name;
 	}
 
-	@PostMapping("/")
+	@PostMapping("/test")
 	public String helloPost(@RequestBody TestDTO testDTO) {
 		return testDTO.toString();
 	}
